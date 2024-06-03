@@ -1,0 +1,14 @@
+<?php
+
+$blocks = $this->getBlocks();
+
+?>
+
+<div class="mgt-developer-toolbar-sidebar-blocks">
+  <div class="container">
+    <h2><?php echo __('Blocks'); ?></h2>
+    <div class="mgt-developer-toolbar-sidebar-blocks-container">
+      <?php echo  $this->renderBlocks($blocks); ?>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,26 @@
+{
+  "name": "plopcom/mgt-developer-toolbar-hyva-compatibility",
+  "authors": [
+    {
+      "name": "Plopcom",
+      "email": "contact@plopcom.fr",
+      "homepage": "https://plopcom.fr/"
+    }
+  ],
+  "description": "",
+  "type": "magento2-module",
+  "version": "0.0.1",
+  "license": [
+    "MS-LICENSE.txt"
+  ],
+  "require": {
+    "php": "~7.4.0|~8.2",
+    "magento/framework": "102.0.*|103.0.*",
+    "magento/module-catalog": "103.0.*|104.0.*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+<?php
+$canShow = $this->canShow();
+$isCollapsible = $this->isCollapsible();
+?>
+<?php if (true === $canShow): ?>
+    <div
+        x-data="{ open: $persist(0).as('mgt-developer-open') }"
+        :class="{'closed':!open}"
+        id="mgt-developer-toolbar" data-collapsible="<?php echo (true === $isCollapsible ? '1' : '0'); ?>" >
+        <button
+            @click.prevent="open = !open"
+            class="mgt-developer-toolbar-logo block">
+            <img src="<?php echo $this->getViewFileUrl('Mgt_DeveloperToolbar::images/logo.png'); ?>" height="35" width="35" alt="Mgt Developer Toolbar" />
+        </button>
+        <div id="mgt-developer-toolbar-blocks" class="mgt-developer-toolbar-blocks clearfix" x-show="open">
+            <?php echo $this->getChildHtml('mgt_developer_toolbar_blocks'); ?>
+        </div>
+        <?php echo $this->getChildHtml('mgt_developer_toolbar_return_to_site'); ?>
+    </div>
+
+<?php endif ?>

@@ -1,0 +1,14 @@
+.mgt-developer-toolbar-block > a > svg{
+    display: inline;
+}
+#mgt-developer-toolbar.closed {
+    width: 50px;
+}
+body.mgtdevelopertoolbar-toolbar-container h2{
+    font-family: Sans-serif;
+    font-size: 22px;
+}
+#mgt-developer-toolbar-container .columns{
+    max-width: none;
+    padding: 0;
+}

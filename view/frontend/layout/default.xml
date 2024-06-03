@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="Plopcom_MgtDeveloperToolbarHyvaCompatibility::css/mgt_hyva.css"/>
+    </head>
+    <body>
+        <referenceContainer name="before.body.end">
+            <referenceBlock name="mgt_developer_toolbar" template="Plopcom_MgtDeveloperToolbarHyvaCompatibility::toolbar.phtml" />
+            <referenceBlock name="mgt_developer_toolbar_block_info" template="Plopcom_MgtDeveloperToolbarHyvaCompatibility::block/info.phtml"/>
+            <referenceBlock name="mgt_developer_toolbar_block_magento_version" template="Plopcom_MgtDeveloperToolbarHyvaCompatibility::block/magento_version.phtml"/>
+            <referenceBlock name="mgt_developer_toolbar_block_php_parse_time" template="Plopcom_MgtDeveloperToolbarHyvaCompatibility::block/php_parse_time.phtml"/>
+            <referenceBlock name="mgt_developer_toolbar_block_memory_consumption" template="Plopcom_MgtDeveloperToolbarHyvaCompatibility::block/memory_consumption.phtml"/>
+            <referenceBlock name="mgt_developer_toolbar_block_database_queries" template="Plopcom_MgtDeveloperToolbarHyvaCompatibility::block/database_queries.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
