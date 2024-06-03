@@ -7,7 +7,7 @@
       "homepage": "https://plopcom.fr/"
     }
   ],
-  "description": "",
+  "description": "Mgt Developer Toolbar Hÿva compatibility",
   "type": "magento2-module",
   "version": "0.0.1",
   "license": [
@@ -16,11 +16,15 @@
   "require": {
     "php": "~7.4.0|~8.2",
     "magento/framework": "102.0.*|103.0.*",
-    "magento/module-catalog": "103.0.*|104.0.*"
+    "magento/module-catalog": "103.0.*|104.0.*",
+    "mgtcommerce/module-mgtdevelopertoolbar": "1.*"
   },
   "autoload": {
     "files": [
-      "registration.php"
-    ]
+      "src/app/code/Plopcom/MgtDeveloperToolbarHyvaCompatibility/registration.php"
+    ],
+    "psr-4": {
+      "Plopcom\\MgtDeveloperToolbarHyvaCompatibility\\": "src/app/code/Plopcom/MgtDeveloperToolbarHyvaCompatibility"
+    }
   }
 }
